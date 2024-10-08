@@ -2,7 +2,7 @@ class Solution(object):
     def findDelayedArrivalTime(self, arrivalTime, delayedTime):
         expected_time = arrivalTime +  delayedTime
         if expected_time > 23:
-            output = 24 - expected_time
+            output = expected_time - 24
             return output
         else:
             output = expected_time
